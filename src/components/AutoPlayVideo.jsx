@@ -1,5 +1,4 @@
 export const AutoPlayVideo = ({ src, width = 179, height = 179 }) => {
-  console.log(src, width, height);
   return (
     <div className="overflow-hidden">
       <video
