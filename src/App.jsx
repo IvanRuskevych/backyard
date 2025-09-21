@@ -1,5 +1,6 @@
 import bg from './assets/svg/bg-up.svg?react';
-import { AboutSection, Header } from './modules/index.js';
+import blue_seed from './assets/videos/blue_seed.mp4';
+import { AboutSection, Header, VideoSection } from './modules/index.js';
 
 function App() {
   
@@ -16,6 +17,8 @@ function App() {
         {/*  Main content */}
         <main className="flex-1 z-0">
           <AboutSection />
+          <VideoSection title="What is Backyard?"
+                        src={blue_seed} />
         </main>
         
         {/*  Footer */}
