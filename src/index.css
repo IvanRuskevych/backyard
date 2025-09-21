@@ -1,68 +1,74 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import "tailwindcss";
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+@theme {
+    /* 🎨 COLORS */
+    --color-grey-50: #F4F6F7;
+    --color-grey-100: #F0F0F1;
+    --color-grey-200: #E6E8EC;
+    --color-grey-300: #D1D4D9;
+    --color-grey-500: #787878;
+    --color-grey-600: #504F4F;
+    --color-grey-700: #303030;
+    --color-grey-800: #2D322F;
+    --color-grey-900: #2D2D2D;
+    --color-grey-955: #2626268C;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    --color-white-50: #FBFBFC;
+    --color-white-100: #F7F7F7;
+    --color-white-200: #F3F4F6;
+    --color-white-300: #F4F6F7;
+
+    --color-swipe: #979797;
+    --color-swipe-active: #5D625F;
+
+    /*--color-surface: #2D322F;*/
+    --color-link: var(--color-white-200);
+    --color-link-active: var(--color-grey-700);
+
+    /* buttons */
+    --color-button-dark: var(--color-grey-900);
+    --color-button-dark-hover: #504F4FFF;
+    --color-button-light: var(--color-grey-200);
+    --color-button-light-hover: #D1D4D9;
+
+    /* text colors */
+    --color-primary: var(--color-grey-700);
+    --color-secondary: var(--color-grey-500);
+    --color-muted: var(--color-grey-955);
+    --color-light: var(--color-white-50);
+    --color-dark: #2E2E2E;
+    --color-inverted: var(--color-white-100);
+
+    /* 🖋️ FONTS */
+    --font-archivo: "Archivo", sans-serif;
+    --font-gilroy: "Gilroy", sans-serif;
+    --font-konnect: "Konnect", sans-serif;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
+/* Base style for body */
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+    @apply font-gilroy text-[14px] font-normal leading-normal;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/* Import fonts*/
+/* Gilroy */
+@font-face {
+    font-family: "Gilroy-Medium";
+    src: url("./assets/fonts/Gilroy-Medium.woff2") format("woff2");
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+@font-face {
+    font-family: "Gilroy-SemiBold";
+    src: url("./assets/fonts/Gilroy-SemiBold.woff2") format("woff2");
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* Konnect */
+@font-face {
+    font-family: "Konnect-Regular";
+    src: url("./assets/fonts/Konnect-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Konnect-Medium";
+    src: url("./assets/fonts/Konnect-Medium.woff2") format("woff2");
 }
