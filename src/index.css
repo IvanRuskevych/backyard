@@ -43,6 +43,9 @@
     --font-archivo: "Archivo", sans-serif;
     --font-gilroy: "Gilroy", sans-serif;
     --font-konnect: "Konnect", sans-serif;
+
+    /* BREAKPOINTS */
+    --breakpoint-3xl: 120rem;
 }
 
 /* Base style for body */
