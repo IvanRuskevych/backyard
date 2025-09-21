@@ -6,3 +6,5 @@ export * from './CardThumb.jsx';
 export * from './VideoSlide.jsx';
 export * from './SliderIndicators.jsx';
 export * from './BrandImage.jsx';
+export * from './VideoSlideGrid.jsx';
+export * from './Container.jsx';

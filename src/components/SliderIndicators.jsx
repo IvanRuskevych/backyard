@@ -3,7 +3,7 @@ import React from 'react';
 export const SliderIndicators = ({ count, activeIndex }) => {
   
   return (
-    <div className="inline-flex gap-[5.6px] mt-4">
+    <div className="inline-flex gap-[5.6px]">
       {Array.from({ length: count }).map((_, idx) => (
         <span
           key={idx}
