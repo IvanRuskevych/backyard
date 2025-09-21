@@ -18,31 +18,39 @@
     --color-white-200: #F3F4F6;
     --color-white-300: #F4F6F7;
 
-    --color-swipe: #979797;
-    --color-swipe-active: #5D625F;
+    --color-grey-400: #979797;
+    --color-grey-550: #5D625F;
+    --color-grey-600-hover: #504F4FFF;
+    --color-grey-850: #2E2E2E;
 
-    /*--color-surface: #2D322F;*/
+    /* color variables */
+    --color-swipe: var(--color-grey-400);
+    --color-swipe-active: var(--color-grey-550);
+
     --color-link: var(--color-white-200);
     --color-link-active: var(--color-grey-700);
 
     /* buttons */
     --color-button-dark: var(--color-grey-900);
-    --color-button-dark-hover: #504F4FFF;
+    --color-button-dark-hover: var(--color-grey-600-hover);
     --color-button-light: var(--color-grey-200);
-    --color-button-light-hover: #D1D4D9;
+    --color-button-light-hover: var(--color-grey-300);
 
     /* text colors */
     --color-primary: var(--color-grey-700);
     --color-secondary: var(--color-grey-500);
     --color-muted: var(--color-grey-955);
     --color-light: var(--color-white-50);
-    --color-dark: #2E2E2E;
+    --color-dark: var(--color-grey-850);
     --color-inverted: var(--color-white-100);
 
     /* 🖋️ FONTS */
     --font-archivo: "Archivo", sans-serif;
     --font-gilroy: "Gilroy", sans-serif;
     --font-konnect: "Konnect", sans-serif;
+
+    /* BREAKPOINTS */
+    --breakpoint-3xl: 120rem;
 }
 
 /* Base style for body */

@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { SectionTitle, SliderIndicators, VideoSlide } from '../components/index.js';
+import { useState } from 'react';
+import { SectionTitle } from '../components/Titles';
+import { VideoList, VideoSwiper } from '../components/Video';
 import { initialCards } from '../data';
 import 'swiper/css';
 
@@ -8,36 +8,21 @@ export const VideoSection = ({ title, cards = initialCards }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   
   return (
-    <section className={'mb-[65px]'}>
-      <div className="flex justify-center">
-        <div className="relative w-full max-w-md">
-          {title && <SectionTitle title={title} />}
-          
-          {/* Swiper */}
-          <Swiper
-            spaceBetween={32}
-            slidesPerView={1}
-            onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
-            className="pb-10"
-          >
-            {cards.map((card, index) => (
-              <SwiperSlide key={index}>
-                <VideoSlide card={card}
-                            index={index} />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-          
-          {/* Swiper indicators */}
-          <div className="absolute -bottom-6 left-0">
-            <SliderIndicators count={cards.length}
-                              activeIndex={activeIndex} />
-          </div>
-        </div>
+    <section className="mb-16">
+      <div className="relative">
+        {title && <SectionTitle title={title}
+                                className={`text-[28px] md:text-[42px] 3xl:text-5xl md:mb-14`} />}
+        
+        {/* mobile & md: swiper */}
+        <VideoSwiper cards={cards}
+                     activeIndex={activeIndex}
+                     setActiveIndex={setActiveIndex} />
+        
+        {/* xl & up: just list */}
+        <VideoList cards={cards} />
       </div>
     </section>
   );
 };
-
 
 

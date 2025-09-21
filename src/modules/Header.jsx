@@ -1,9 +1,9 @@
-import { Logo } from '../components/Logo.jsx';
+import { Logo } from '../components/ui';
 
 export const Header = () => {
   return (
-    <header>
+    <>
       <Logo />
-    </header>
+    </>
   );
 };

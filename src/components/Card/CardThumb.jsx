@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const CardThumb = ({ title, text }) => {
   return (
     <div className="bg-grey-50 rounded-4xl p-8">
