@@ -1,5 +1,5 @@
-import logo from '../assets/svg/logo.svg?react';
-import { BrandImage } from '../components';
+import logo from '../../assets/svg/logo.svg?react';
+import { BrandImage } from '../ui';
 
 export const Logo = () => {
   return (

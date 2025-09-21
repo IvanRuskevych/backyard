@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const BrandImage = ({ src, alt = 'default alt', className = '' }) => {
   return (
     <div

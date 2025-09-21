@@ -1,4 +1,4 @@
-import { Logo } from '../components';
+import { Logo } from '../components/ui';
 
 export const Header = () => {
   return (

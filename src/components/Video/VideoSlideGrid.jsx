@@ -1,7 +1,5 @@
-import React from 'react';
+import { CardThumb, CardTitle } from '../Card';
 import { AutoPlayVideo } from './AutoPlayVideo.jsx';
-import { CardThumb } from './CardThumb.jsx';
-import { CardTitle } from './CardTitle.jsx';
 
 export const VideoSlideGrid = ({ card, index }) => {
   return (
